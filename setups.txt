@@ -1,0 +1,12 @@
+1. Using CLI commands: cd, pwd, mkdir (to create a directory), cd\ (to go back to the big directory)
+
+2. Creating a virtual environment to use for the project (**NOTE**: It does not have to be in the working directory, needs to be in the working space only)
+    - By the command: python -m venv cuda
+    - The reason we go with CUDA: when we need to accelerate the model's learning, we need GPUs, and cuda is the feature in the GPU to do that
+
+3. Activate the environment: cuda\Scripts\activate
+
+4. Installing dependencies: pip install pylzma numpy ipykernel jupyter torch --index-url https://download.pytorch.org/whl/cu118
+
+5. MAKE SURE THAT THE VIRTUAL ENVIRONMENT THAT WE SET UP IS IN THE JUPYTER 
+To set up the cuda kernel into jupyter notebook: while activated: `python -m ipykernel install --user --name=cuda --display-name "name-of-your-choice"`
